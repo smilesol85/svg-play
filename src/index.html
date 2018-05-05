@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>webpack 4 quickstart</title>
+    <title>svg play</title>
 </head>
+
 <body>
+    <div>
+        <h2>use image tag</h2>
+        <ul>
+            <li>
+                <img src="image/lightbulb.png" width="40" alt="light">
+                <p>12KB(original)</p>
+            </li>
+            <li>
+                <img src="image/lightbulb_8bit.png" width="40" alt="light">
+                <p>9KB(original)</p>
+            </li>
+            <li>
+                <img src="image/lightbulb.svg" width="40" alt="light">
+                <p>5KB(original)</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>use svg tag</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="red" stroke-width="1" fill="yellow" />
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:rgb(0, 255, 128);stroke-width:1;stroke:rgb(0,0,0)" />
+        </svg>
+        <svg height="30" width="200">
+            <text x="0" y="15" fill="green">(Thie is SVG TEXT!)</text>
+        </svg>
+    </div>
     <div id="app">
     </div>
 </body>
+
 </html>
